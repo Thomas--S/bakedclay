@@ -50,6 +50,8 @@ for _, clay in pairs(clay) do
 			groups = {cracky = 3},
 			sounds = default.node_sound_stone_defaults(),
 		})
+		
+		stairsplus:register_alias_all("bakedclay", clay[1], "bakedclay", "baked_clay_" .. clay[1])
 
 	-- register stair and slab (unless stairs redo active)
 	elseif stairs and not stairs.mod then
